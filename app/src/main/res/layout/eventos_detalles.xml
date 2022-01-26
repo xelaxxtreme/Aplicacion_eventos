@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingHorizontal="10dp"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_detalles"
+        android:elevation="10dp">
+        <ImageView
+            android:id="@+id/ivImagenA"
+            android:layout_width="180dp"
+            android:layout_height="250dp"/>
+
+        <TextView
+            android:id="@+id/tvArtistasA"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Artistas"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="prov. "
+                android:textColor="#ABABAB"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/tvProvA"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Nombre LOCAL"
+                android:textColor="#ABABAB"
+                android:textSize="13sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Fecha: "
+                android:textColor="#858586"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/tvFechaA"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="0000-00-00"
+                android:textColor="#858586"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

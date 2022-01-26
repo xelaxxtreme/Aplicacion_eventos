@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_app"
+    android:orientation="vertical"
+    tools:context=".fragment.inicio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvinicioTipoEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lobster"
+            android:rotation="-2"
+            android:textColor="#ffffff"
+            android:text="evento"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvinicioTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="-7dp"
+            android:fontFamily="@font/lobster"
+            android:rotation="-3"
+            android:textColor="#ffffff"
+            android:text="Titulo"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:paddingHorizontal="10dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:scrollbarThumbVertical="@color/teal_700"
+            android:scrollbarSize="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/ivinicioImagen"
+                    android:layout_width="235dp"
+                    android:layout_height="265dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/forma_imagen" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvinicioArtistas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sunrise"
+                        android:gravity="center"
+                        android:text="Artistas"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="27sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/krinkes"
+                            android:paddingStart="8dp"
+                            android:text="LOCAL: "
+                            android:textColor="#E1E1E1"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvinicioLocal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lobster"
+                            android:text="Local"
+                            android:textColor="#E1E1E1"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/krinkes"
+                            android:paddingStart="8dp"
+                            android:text="DIRECCION: "
+                            android:textColor="#E1E1E1"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/tvinicioDireccion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/lobster"
+                            android:text="Direccion5"
+                            android:textColor="#E1E1E1"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/krinkes"
+                                android:text="Fecha: "
+                                android:textColor="#C8C8C8"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvinicioFecha"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/big_suprise"
+                                android:text="2022-12-21"
+                                android:textColor="#C8C8C8"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/krinkes"
+                                android:text="Hora: "
+                                android:textColor="#C8C8C8"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvinicioHora"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/big_suprise"
+                                android:text="15:20"
+                                android:textColor="#C8C8C8"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="8dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/krinkes"
+                                android:text="dpto. "
+                                android:textColor="#AFAFAF"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/tvinicioDepartamento"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/krinkes"
+                                android:text="Madre de Dios"
+                                android:textColor="#AFAFAF"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/krinkes"
+                                android:text="prov. "
+                                android:textColor="#AFAFAF"
+                                android:textSize="17sp" />
+                            <TextView
+                                android:id="@+id/tvinicioProvincia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/krinkes"
+                                android:text="Provincia"
+                                android:textColor="#AFAFAF"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/buComprar"
+                        android:layout_gravity="center"
+                        android:text="COMPRAR ENTRADAS"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/boton_ventas"
+                        android:layout_marginBottom="4dp"/>
+
+                </LinearLayout>
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adViewInicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-5582861426500490/9438647419">
+                </com.google.android.gms.ads.AdView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

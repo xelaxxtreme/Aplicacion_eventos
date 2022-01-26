@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "107747254927",
+    "project_id": "festeja-peru-aec5e",
+    "storage_bucket": "festeja-peru-aec5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107747254927:android:032cb6c583e41f2f77c6fa",
+        "android_client_info": {
+          "package_name": "my.wab.festejaper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnxYL0ZYCKxAhiTaMlVTp4oOaK_3vnppc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

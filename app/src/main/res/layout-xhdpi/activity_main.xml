@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo_app">
+
+    <TextView
+        android:id="@+id/tvMenuTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textStyle="bold"
+        android:text="Futuros Eventos"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/lobster"
+        android:rotation="-2"
+        android:elevation="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMenuDepartamentos"
+            android:textSize="20sp"
+            android:text="Departamento: "
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-condensed-medium"/>
+        <Spinner
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spDepartamento"
+            android:padding="5dp"
+            android:entries="@array/Departamentos"
+            android:backgroundTint="#25FF00" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEventos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
